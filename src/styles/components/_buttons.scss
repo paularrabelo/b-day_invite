@@ -1,0 +1,20 @@
+@use '../variaveis'; 
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    color: variaveis.$corDoTextoSecundaria;
+    background-color: variaveis.$buttonColor;
+    border: 1px solid variaveis.$buttonColor;
+    border-radius: 5px;
+    
+    &:hover {
+        background-color: variaveis.$buttonColorHover;
+        border-color: variaveis.$buttonColor;
+    }
+}

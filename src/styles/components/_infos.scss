@@ -1,0 +1,48 @@
+@use '../variaveis';
+
+.infos {
+    padding: 16px 24px;
+    background-color: variaveis.$corDoTextoSecundaria;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__lista {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variaveis.$corDoTexto;
+
+            b { 
+                color: variaveis.$corDoTexto;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: variaveis.$mobile) {
+        display: block;
+
+        &__lista {
+            display: block;
+
+            &__item {
+                font-size: 12px;
+                margin-bottom: 24px;
+
+                b {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: variaveis.$tablet) {
+        &__lista {
+            gap: 16px;
+        }
+    }
+}
